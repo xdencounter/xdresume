@@ -20,4 +20,12 @@ public class Constants {
 	  public static final String MESSAGE_WARNING_FOOTER = "warningFooter";
 	  public static final String MESSAGE_SUCCESS_FOOTER = "successFooter";
 	  public static final String MESSAGE_ACTION = "action";
+	/**
+	 * 管理后台登录成功
+	 */
+	public static final String ADMINLOGIN_SUCCESS = "adminuser";
+	/**
+	 * 前台会员登录成功
+	 */
+	public static final String WEBLOGIN_SUCCESS = "webuser";
 }

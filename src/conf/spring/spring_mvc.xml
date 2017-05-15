@@ -73,8 +73,16 @@
 		<property name="maxUploadSize" value="209715200"/><!-- 200M -->  
 		<!-- <property name="resolveLazily" value="true"/> -->
 	</bean>
-		
 
+	<mvc:interceptors>
+
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean
+					class="com.ray.base.common.interceptor.AdminLoginInterceptor" >
+			</bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 	<mvc:annotation-driven />
 
 
